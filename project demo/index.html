@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Roboto:wght@100&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section class="hero is-medium is-primary is-bold has-bg-img" id="hero">
+        <div class="hero-body">
+          <div class="container initial">
+            <h1 class="title">
+              Cocktail Curator
+            </h1>
+            <h2 class="subtitle">
+              Search below to find your perfect cocktails or the ingridients to make your own! 
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="section has-bg-img" id="search-box">
+        <div class="container initial">
+          <h1 class="title">Get Your Drink On</h1>
+          <br>
+        <ul>
+        <li>
+          <h2 class="subtitle">
+          </h2>
+
+          <div class="control">
+            <input class="input" type="text" placeholder="Search by cocktail name" id="cocktailBar">
+          </div>
+         
+          <br>
+
+          <div class="control">
+            <input class="input" type="text" placeholder="Search by ingredients">
+          </div>
+
+          <br> 
+
+          <div class="control">
+            <button class="button is-primary" onclick="getrandomCocktail()">Submit</button>
+          </div>
+      </section>
+      
+      <div class = "search-result">
+        <div class="row displayCocktail" id="#displayCocktail">
+          <div class="col-xs-push-2 col-xs-5" id="cocktailPicture"></div>
+          <div class="col-xs-push-1 col-xs-4" id="cocktailInfo">
+              <div id="cocktailTitle"></div>
+              <div id="howTo"></div>
+              <div id="instructions"></div>
+          </div>
+
+      </div>
+
+
+      <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+          Thanks for stopping by!
+          </p>
+        </div>
+      </footer>
+      <script src="script.js"></script>
+  </body>
+</html>
