@@ -7,9 +7,12 @@ h1{
 
 #hero-title{
     font-size: 75px;
-
+    color: rgb(0, 209, 178);
 }
 
+.cocktail {
+    color: #e6a227;
+}
 
 h2 {
     text-align: center;
