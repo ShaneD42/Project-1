@@ -4,7 +4,7 @@ const searchForm = document.querySelector("input");
 const searchResultDiv = document.querySelector(".search-result");
 // const container = document.querySelector(".container");
 // let searchQuery = "";
-// const APP_KEY = "d45e7af646msh5ad016ffb0f335dp15393bjsn337df5e06fbd";
+// const APP_KEY = 
 
 //   const settings = {
 // 	"async": true,
@@ -12,8 +12,7 @@ const searchResultDiv = document.querySelector(".search-result");
 // 	"url": "https://rapidapi.p.rapidapi.com/list.php?i=list",
 // 	"method": "GET",
 // 	"headers": {
-// 		"x-rapidapi-host": "the-cocktail-db.p.rapidapi.com",
-// 		"x-rapidapi-key": "d45e7af646msh5ad016ffb0f335dp15393bjsn337df5e06fbd"
+
 // 	}
 // };
 
