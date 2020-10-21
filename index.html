@@ -9,14 +9,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Roboto:wght@100&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
   </head>
+
   <body>
+
+    <!--JUMBOTRON HEADER-->
     <section class="hero is-medium is-primary is-bold has-bg-img" id="hero">
         <div class="hero-body">
           <div class="container">
-            <h1 class="title">
-                <i class="fas fa-cocktail"></i>
-                <span class="curator">The</span>  <span class="cocktail"> Cocktail</span> <span class="curator">Curator</span>
-                <i class="fas fa-cocktail"></i>
+            <h1 class="title" id="hero-title">
+              <i class="fas fa-cocktail"></i>
+              The Cocktail Curator
+              <i class="fas fa-cocktail"></i>
             </h1>
             <h2 class="subtitle">
               Search below to find your perfect cocktails or the indridients to make your own! 
@@ -25,31 +28,52 @@
         </div>
       </section>
 
+      <!--Divs that contain the search forms or buttons to get results-->
+    <div class="columns">
+      <div class="column">
       <section class="section has-bg-img" id="search-box">
         <div class="container">
-          <h1 class="title">Get Your Drink On</h1>
+          <h1 class="title">Know What'a Want?</h1>
+          <h2>Search by Cocktail Name</h2>
           <br>
-        <ul>
-        <li>
-          <h2 class="subtitle">
-          </h2>
-
           <div class="control">
-            <input class="input" type="text" placeholder="Search by cocktail name">
+            <input class="input" type="text" placeholder="">
           </div>
-         
           <br>
-
           <div class="control">
-            <input class="input" type="text" placeholder="Search by ingredients">
+            <button class="button is-primary">Submit</button>
           </div>
-
+        </div>
+      </section>
+      </div>
+      <div class="column">
+      <section class="section has-bg-img" id="search-box">
+        <h1 class="title"> Open To Suggestions?</h1>
+        <h2>Search by Ingredient</h2>
+        <br>
+          <div class="control">
+            <input class="input" type="text" placeholder="">
+          </div>
           <br> 
-
           <div class="control">
             <button class="button is-primary">Submit</button>
           </div>
       </section>
+      </div>
+      <div class="column">
+        <section class="section has-bg-img" id="search-box">
+          <h1 class="title"> Feeling Crazy?</h1>
+          <h2>Click the button to get a random cocktail suggestion</h2>
+          <br>
+            <div class="control">
+              <button class="button is-primary">Submit</button>
+            </div>
+        </section>
+        </div>
+    </div>
+    
+
+      
 
       <footer class="footer">
         <div class="content has-text-centered">
