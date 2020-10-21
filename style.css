@@ -1,10 +1,38 @@
-.cocktail {
-    color: greenyellow;
+h1{
+    text-align: center;
+    font-family: 'Monoton', cursive;
+   
+
 }
 
-.curator {
-    color: khaki;
+#hero-title{
+    font-size: 75px;
+
 }
-.fa-cocktail {
-    color: goldenrod;
+
+
+h2 {
+    text-align: center;
+
 }
+
+#hero{
+    background: url(https://i.pinimg.com/originals/2a/c4/77/2ac477bc2708882901461560be69b9ab.jpg);
+
+}
+
+#search-box{
+    border-style: solid;
+    border-color: rgb(0, 209, 178);
+    margin: 30px;
+}
+
+.footer {
+    background-color: hsl(171, 100%, 41%);
+    color: white;
+}
+
+i{
+    color: #e6a227;
+}
+
