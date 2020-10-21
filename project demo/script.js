@@ -1,42 +1,23 @@
-
-
-const searchForm = document.querySelector("input");
-const searchResultDiv = document.querySelector(".search-result");
-// const container = document.querySelector(".container");
-// let searchQuery = "";
-// const APP_KEY = 
-
-//   const settings = {
-// 	"async": true,
-// 	"crossDomain": true,
-// 	"url": "https://rapidapi.p.rapidapi.com/list.php?i=list",
-// 	"method": "GET",
-// 	"headers": {
-
-// 	}
-// };
-
-// $.ajax(settings).done(function (response) {
-// 	console.log(response);
-// });
-
-
-
-//   async function fetchAPI() {
-//     const baseURL = `https://www.thecocktaildb.com/api/json/v1/{APP_KEY}/search.php?s={searchQuery}`
-//     const response = await fetch(baseURL);
-//     const data = await response.json();
-//     generateHTML(data.hits);
-//     console.log(data);
-//   }
-
-//global variable, get input value despite it changing 
+//global variable
 const searchCocktail = document.getElementById('cocktailBar');
 
 searchCocktail.addEventListener('change', () => {
     const searchValue = searchCocktail.value;
     getCocktailByName(searchValue);
 })
+
+//function for random cocktail
+function getRandomCocktail() {
+
+    fetch(`https://www.thecocktaildb.com/api/json/v1/1/random.php`)
+        .then((response) => response.json())
+        .then((cocktailData) => {
+            displayRandomCocktail(cocktailData)
+        })
+        .catch((error) => {
+            console.log(error)
+        })
+}
 
 function getCocktailByName(cocktail) {
     fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${cocktail}`)
@@ -53,26 +34,26 @@ function getCocktailByName(cocktail) {
         })
 }
 
-//Function that creates what to display in html, called when clicking on moodButton
-function displayrandomCocktail(cocktailData) {
+//function to show what happens in html
+function displayRandomCocktail(cocktailData) {
     const { drinks } = cocktailData;
     const cocktailpictureElement = document.getElementById('cocktailPicture');
     let cocktailPicture = `<img class="drinkThumb" src= "${drinks[0].strDrinkThumb}">`;
 
     cocktailpictureElement.innerHTML = cocktailPicture;
 
-    //display first cocktailinfo
+    //display title
     const cocktailTitleElement = document.getElementById('cocktailTitle');
 
     let cocktailInfo = `
     <h4 class="cocktailName"> ${drinks[0].strDrink} </h4>
     <p class="typeOfglass">Type of glass:</p><p>${drinks[0].strGlass}</p>
-    </br><p class="howToMake">How to make:</p>`
+    </br><p class="howToMake"></p>`
 
     cocktailTitleElement.innerHTML = cocktailInfo;
 
 
-    //display second cocktailinfo
+    //display ingredients
     const cocktailInfoElement = document.getElementById('howTo');
 
     let result = '';
@@ -87,7 +68,7 @@ function displayrandomCocktail(cocktailData) {
     }
 
 
-    //display third cocktailinfo
+    //display instructions
     const cocktailInstructionsElement = document.getElementById('instructions');
     let instructions = `
     </br><p>${drinks[0].strInstructions}</p>`;
@@ -97,8 +78,7 @@ function displayrandomCocktail(cocktailData) {
 }
 
 
-//Function that creates what to display in html
-//it is being called when clicking on shakebutton to display info from input value
+//Function that creates html display
 function displayinputvalue(cocktailData) {
     const { drinks } = cocktailData;
     const cocktailpictureElement = document.getElementById('cocktailPicture');
@@ -107,7 +87,7 @@ function displayinputvalue(cocktailData) {
 
     cocktailpictureElement.innerHTML = cocktailPicture;
 
-    //display first cocktailinfo
+    //display title
     const cocktailTitleElement = document.getElementById('cocktailTitle');
 
     let cocktailInfo = `
@@ -118,7 +98,7 @@ function displayinputvalue(cocktailData) {
     cocktailTitleElement.innerHTML = cocktailInfo;
 
 
-    //display second cocktailinfo
+    //display ingredients
     const cocktailInfoElement = document.getElementById('howTo');
 
     let result = '';
@@ -133,7 +113,7 @@ function displayinputvalue(cocktailData) {
     }
 
 
-    //display third cocktailinfo
+    //display instructions
     const cocktailInstructionsElement = document.getElementById('instructions');
     let instructions = `
     </br><p>${drinks[0].strInstructions}</p>`;
