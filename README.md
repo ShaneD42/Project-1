@@ -14,3 +14,10 @@ Features:
 -Link goes here-
 
 -Screenshot goes here-
+
+
+# Credits: 
+- https://fontawesome.com
+- https://bulma.io
+- https://jquery.com
+- https://www.thecocktaildb.com/api.php
