@@ -13,7 +13,7 @@ Features:
 # Link: 
 -Link goes here-
 
--Screenshot goes here-
+![Screenshot of page](https://user-images.githubusercontent.com/69053531/96941145-ae350d00-149f-11eb-9c14-a86717981cc9.png)
 
 
 # Credits: 
