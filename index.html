@@ -85,12 +85,70 @@
           </div>
     
 
+         <!--Share Button-->
+      <body>
+  
+        <div class="wrapper">
+          <div class="toggle_button">
+            <ul>
+              <li>
+                <a class="share_btn">
+                  <span class="text">SHARE</span>
+                  <span class="icon"><i class="fas fa-bullhorn"></i></span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="sm facebook">
+                  <span class="icon">
+                    <i class="fab fa-facebook-square"></i>
+                  </span>
+                  <span class="text">Facebook</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="sm twitter">
+                  <span class="icon">
+                    <i class="fab fa-twitter-square"></i>
+                  </span>
+                  <span class="text">Twitter</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="sm instagram">
+                  <span class="icon">
+                    <i class="fab fa-instagram"></i>
+                  </span>
+                  <span class="text">Instagram</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="sm pinterest">
+                  <span class="icon">
+                    <i class="fab fa-pinterest-square"></i>
+                  </span>
+                  <span class="text">Pinterest</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      
+      <script>
+        var share_btn = document.querySelector(".share_btn");
+        var toggle_button = document.querySelector(".toggle_button");
+      
+        share_btn.addEventListener("click", function(){
+          toggle_button.classList.toggle("active");
+        })
+      </script>
+<!--End of Share Button-->      
+
       
 
       <footer class="footer">
         <div class="content has-text-centered">
           <p>
-          Thanks for stopping by!
+          Thanks for stopping by! &hearts;
           </p>
         </div>
       </footer>
@@ -98,3 +156,4 @@
       <script src="script.js"></script>
   </body>
 </html>
+
