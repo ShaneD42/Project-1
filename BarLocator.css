@@ -14,11 +14,20 @@ body, html {
 h1{
   text-align: center;
   font-family: 'Monoton', cursive;
- 
-
 }
 
+#hero-title{
+  font-size: 60px;
+  color: #e6a227;
+}
 
+.grab {
+  color: hsl(171, 100%, 41%);
+}
+
+i{
+  color: #e6a227;
+}
 
 input {
   height: 20px;
