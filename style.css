@@ -64,7 +64,9 @@ section {
 }
 /*Share button*/
 
-
+button {
+    margin-left: 260px;
+}
 *{
     margin: 0;
     padding: 0;
