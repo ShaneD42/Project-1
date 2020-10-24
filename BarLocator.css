@@ -1,0 +1,73 @@
+
+body, html {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+}
+
+#hero{
+  background: url(https://i.pinimg.com/originals/2a/c4/77/2ac477bc2708882901461560be69b9ab.jpg);
+
+}
+
+h1{
+  text-align: center;
+  font-family: 'Monoton', cursive;
+ 
+
+}
+
+
+
+input {
+  height: 20px;
+  width: 200px;
+  margin: auto;
+}
+
+.container {
+  padding: 10px;
+  text-align: center;
+}
+
+.header {
+  border-radius: 25px;
+  background-color: #f5f5dc;
+  padding-top: 0px;
+}
+
+.userlocation {
+  font-size: 30px;
+  border-radius: 50px;
+  background-color: white;
+  border: 3px solid hsl(171, 100%, 41%);
+  padding: 10px;
+  margin: 30px;
+}
+
+.addressbox {
+  padding: 20px;
+
+}
+
+#search{
+  width: 20%;
+}
+
+.button {
+  background-color: #00ccff;
+  border: 1px solid #0033cc;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+
+#map {
+  align-items: center;
+ border-radius: 25px; 
+ height: 750px;
+ width: 100%;
+ margin-top: 10px;
+ margin-left: 10px;
+}
