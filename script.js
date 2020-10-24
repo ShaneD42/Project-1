@@ -6,12 +6,6 @@ searchCocktail.addEventListener('change', () => {
     getCocktailByName(searchValue);
 })
 
-const searchIngredient = document.getElementById('ingredientBar');
-
-searchIngredient.addEventListener('change', () => {
-    const searchValueIng = searchIngredient.value;
-    getCocktailByIngredient(searchValueIng);
-})
 
 //function for random cocktail
 function getRandomCocktail() {
@@ -26,20 +20,7 @@ function getRandomCocktail() {
         })
 }
 
-function getCocktailByIngredient(ingredient) {
-    fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${ingredient}`)
-        .then((response) => response.json())
-        .then((cocktailData) => {
-            displayinputvalue(cocktailData)
-        })
-        .catch((error) => {
-            if (document.getElementById("searchIngredient").value == "") {
-                showErrMsg(error)
-            } else {
-                hideErrMsg(error)
-            };
-        })
-}
+
 
 function getCocktailByName(cocktail) {
     fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${cocktail}`)
